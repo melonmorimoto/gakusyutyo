@@ -1,0 +1,15 @@
+{
+  "name": "gakusyutyo",
+  "version": "1.0.0",
+  "main": "study-time.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vercel": "^39.1.1"
+  }
+}
