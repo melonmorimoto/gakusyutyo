@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>学習記録帳-勉強時間チェック</title>
+  <link rel="stylesheet" href="study-time.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>学習記録帳-勉強時間チェック</h1>
+    <button onclick="location.href='study-time.html'">戻る</button>
+
+    <!-- 進捗管理 -->
+    <h2>進捗管理</h2>
+    <div id="progressContainer">
+      <p id="progressText">目標設定を行ってください。</p>
+      <div class="progress-bar">
+        <div id="progressBar" class="progress"></div>
+      </div>
+    </div>
+
+    <!-- 学習記録一覧（週別） -->
+    <h2>学習記録一覧（週別）</h2>
+    <div id="recordsContainer"></div>
+
+    <!-- グラフ表示エリア -->
+    <h2>週ごとの平均学習時間グラフ</h2>
+    <canvas id="weeklyAverageChart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="study-time.js"></script>
+</body>
+</html>

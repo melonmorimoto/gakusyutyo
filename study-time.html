@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>学習記録帳</title>
+  <link rel="stylesheet" href="study-time.css">
+</head>
+<style>
+
+</style>
+<body>
+  <div class="container">
+    <h1>学習記録帳</h1>
+    <button onclick="location.href='pokesuke.html'" id="backpokesuke">ホームに戻る</button>
+
+    <!-- 学習記録フォーム -->
+    <form id="learningForm">
+      <label for="date">日付:</label>
+      <input type="date" id="date" required>
+
+      <label for="subject">学習内容:</label>
+      <input type="text" id="subject" required>
+
+      <label for="hours">学習時間 (時間):</label>
+      <input type="number" id="hours" min="0" required>
+
+      <button type="submit">記録を追加</button>
+    </form>
+
+    <!-- 目標設定フォーム -->
+    <h2>目標設定</h2>
+    <form id="goalForm">
+      <label for="goal">学習目標:</label>
+      <input type="text" id="goal" required>
+
+      <label for="goalHours">目標学習時間 (週間):</label>
+      <input type="number" id="goalHours" min="0" required>
+
+      <button type="submit">目標を設定</button>
+    </form>
+
+    <!-- 進捗管理 -->
+    <h2>進捗管理</h2>
+    <div id="progressContainer">
+      <p id="progressText">目標設定を行ってください。</p>
+      <div class="progress-bar">
+        <div id="progressBar" class="progress"></div>
+      </div>
+    </div>
+  <button onclick="location.href='week.html'">過去の記録を見る</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="study-time.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #4CAF50;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input, button {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .record {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* 進捗バーのスタイル */
+  .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25px;
+    margin-top: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0%;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  /* 週別セクションのスタイル */
+  .week-section {
+    margin-bottom: 20px;
+  }
+  
+  .week-title {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
